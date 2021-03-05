@@ -271,4 +271,37 @@ body #bg-pattern2 {
   font-weight: 400;
   font-size: 14px;
 }
+
+.attribution {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 89.9375rem) {
+  .attribution {
+    left: 50%;
+    -webkit-transform: translate(-50%, 160%);
+            transform: translate(-50%, 160%);
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .attribution {
+    left: 50%;
+    -webkit-transform: translate(-50%, 260%);
+            transform: translate(-50%, 260%);
+  }
+}
 /*# sourceMappingURL=main.css.map */

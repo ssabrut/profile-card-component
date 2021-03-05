@@ -162,3 +162,19 @@ body {
     }
   }
 }
+
+.attribution {
+  position: relative;
+  @include flexCenter;
+  flex-direction: column;
+
+  @media screen and (max-width: 89.9375rem) {
+    left: 50%;
+    transform: translate(-50%, 160%);
+  }
+
+  @media screen and (min-width: 90rem) {
+    left: 50%;
+    transform: translate(-50%, 260%);
+  }
+}
