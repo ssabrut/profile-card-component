@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: #19a2ae;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body #bg-pattern1 {
+  position: absolute;
+  bottom: 50%;
+  right: 40%;
+  z-index: 0;
+}
+
+body #bg-pattern2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 0;
+}
+
+.card-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 30%);
+          transform: translate(-50%, 30%);
+  background: white;
+  width: 20.5625rem;
+  height: 26.1875rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-panel #bg-pattern-card {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.card-panel #victor {
+  position: absolute;
+  top: 20%;
+  background: white !important;
+  border: 6px solid white;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+}
+
+.card-panel .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-panel .description .biograph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.card-panel .description .biograph h3 {
+  font-size: 18px;
+  color: #2d3248;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.card-panel .description .biograph p {
+  margin-top: 0.1rem;
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+.card-panel .description p {
+  color: #6a6f81;
+  font-weight: 400;
+  margin-top: 0.75rem;
+}
+
+.card-panel .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  top: 30%;
+  border-top: 1px solid #969696;
+  padding-top: 1.5rem;
+  width: 100%;
+}
+
+.card-panel .social-media .follower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-panel .social-media .likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-panel .social-media .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-panel .social-media h2 {
+  font-size: 18px;
+  color: #2d3248;
+  font-weight: 700;
+}
+
+.card-panel .social-media p {
+  color: #6a6f81;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+}
+/*# sourceMappingURL=main.css.map */
