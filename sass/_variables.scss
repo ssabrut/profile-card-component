@@ -1,11 +1,32 @@
+//color
 $darkCyan: hsl(185, 75%, 39%);
 $darkBlue: hsl(229, 23%, 23%);
 $grayishBlue: hsl(227, 10%, 46%);
 $darkGrey: hsl(0, 0%, 59%);
 
+//breakpoints
+$breakpoints-up: (
+  "large": "90rem",
+);
+
+$breakpoints-down: (
+  "small": "23.4375rem",
+);
 
 @mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin breakpoints-up($size) {
+  @media (min-width: map-get($breakpoints-up , $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoints-down($size) {
+  @media (max-width: map-get($breakpoints-down , $size)) {
+    @content;
+  }
 }

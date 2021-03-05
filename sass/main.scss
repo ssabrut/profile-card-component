@@ -9,15 +9,32 @@ body {
 
   #bg-pattern1 {
     position: absolute;
-    bottom: 50%;
-    right: 40%;
+
+    @media screen and (max-width: 89.9375rem) {
+      bottom: 50%;
+      right: 40%;
+    }
+
+    @media screen and (min-width: 90rem) {
+      bottom: 50%;
+      right: 50%;
+    }
     z-index: 0;
   }
 
   #bg-pattern2 {
     position: absolute;
-    top: 40%;
-    left: 40%;
+
+    @media screen and (max-width: 89.9375rem) {
+      top: 40%;
+      left: 40%;
+    }
+
+    @media screen and (min-width: 90rem) {
+      top: 55%;
+      left: 50%;
+    }
+
     z-index: 0;
   }
 }
@@ -26,11 +43,27 @@ body {
   @include flexCenter;
   flex-direction: column;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 30%);
+
+  @media screen and (max-width: 89.9375rem) {
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+
+  @media screen and (min-width: 90rem) {
+    left: 50%;
+    transform: translate(-50%, 40%);
+  }
+
+  @media screen and (max-width: 89.9375rem) {
+    width: 20.5625rem;
+    height: 26.1875rem;
+  }
+
+  @media screen and (min-width: 90rem) {
+    width: 25.5625rem;
+    height: 31.1875rem;
+  }
   background: white;
-  width: 20.5625rem;
-  height: 26.1875rem;
   border-radius: 1rem;
   overflow: hidden;
 
@@ -46,14 +79,22 @@ body {
     background: white !important;
     border: 6px solid white;
     border-radius: 50%;
-    width: 7rem;
-    height: 7rem;
+
+    @media screen and (max-width: 89.9375rem) {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    @media screen and (min-width: 90rem) {
+      width: 8rem;
+      height: 8rem;
+    }
   }
 
   .description {
     @include flexCenter;
     position: relative;
-    top: 20%;
+    top: 15%;
     flex-direction: column;
 
     .biograph {

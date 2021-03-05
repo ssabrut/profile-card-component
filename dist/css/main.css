@@ -19,16 +19,40 @@ body {
 
 body #bg-pattern1 {
   position: absolute;
-  bottom: 50%;
-  right: 40%;
   z-index: 0;
+}
+
+@media screen and (max-width: 89.9375rem) {
+  body #bg-pattern1 {
+    bottom: 50%;
+    right: 40%;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  body #bg-pattern1 {
+    bottom: 50%;
+    right: 50%;
+  }
 }
 
 body #bg-pattern2 {
   position: absolute;
-  top: 40%;
-  left: 40%;
   z-index: 0;
+}
+
+@media screen and (max-width: 89.9375rem) {
+  body #bg-pattern2 {
+    top: 40%;
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  body #bg-pattern2 {
+    top: 55%;
+    left: 50%;
+  }
 }
 
 .card-panel {
@@ -46,14 +70,39 @@ body #bg-pattern2 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  left: 50%;
-  -webkit-transform: translate(-50%, 30%);
-          transform: translate(-50%, 30%);
   background: white;
-  width: 20.5625rem;
-  height: 26.1875rem;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+@media screen and (max-width: 89.9375rem) {
+  .card-panel {
+    left: 50%;
+    -webkit-transform: translate(-50%, 30%);
+            transform: translate(-50%, 30%);
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .card-panel {
+    left: 50%;
+    -webkit-transform: translate(-50%, 40%);
+            transform: translate(-50%, 40%);
+  }
+}
+
+@media screen and (max-width: 89.9375rem) {
+  .card-panel {
+    width: 20.5625rem;
+    height: 26.1875rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .card-panel {
+    width: 25.5625rem;
+    height: 31.1875rem;
+  }
 }
 
 .card-panel #bg-pattern-card {
@@ -68,8 +117,20 @@ body #bg-pattern2 {
   background: white !important;
   border: 6px solid white;
   border-radius: 50%;
-  width: 7rem;
-  height: 7rem;
+}
+
+@media screen and (max-width: 89.9375rem) {
+  .card-panel #victor {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .card-panel #victor {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 .card-panel .description {
@@ -83,7 +144,7 @@ body #bg-pattern2 {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  top: 20%;
+  top: 15%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
